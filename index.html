@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>HHHEEEYYY</title>
+</head>
+<body>
+    <nav>
+        <ul class="list">
+            <li class="list-item" ><a class="item"  href="#">Home</a></li>
+            <li class="list-item"><a  class="item" href="contact.html">contact</a></li>
+            <li class="list-item"><a  class="item" href="login.html">LogIn</a></li>
+            <li class="list-item"><a  class="item" href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+        <input type="text" id="sear-txt" value=""/>
+        <button onclick="searched()">search</button>
+        </div>
+        <h2 id="user-name"></h2>
+        <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+    </nav>
+    <div>
+        <img src="https://i1.wp.com/mycrackfree.com/wp-content/uploads/2018/07/TuneFab-Apple-Music-Converter-5.0.200.jpg?fit=660%2C460&ssl=1" alt="Body Image " width="100%" height="700px"/>
+        <div class="notification-container">
+            <div class="notification-glossy" id="notification">
+                <!-- The content will be dynamically updated using JavaScript -->
+            </div>
+    </div>
+<h1 class="heading">PRODUCTS</h1>
+    
+    <div class="menu-container">
+        <div class="grid-menu grid1">
+            <div class="grid-item"><img src="https://www.gstatic.com/webp/gallery3/5_webp_ll.webp" class="grid-item img"/>Item 1</div>
+            <div class="grid-item"><img src="https://www.gstatic.com/webp/gallery/3.webp" class="grid-item img"/>Item 2</div>
+            <div class="grid-item"><img src="https://www.gstatic.com/webp/gallery/5.sm.webp" class="grid-item img"/>Item 3</div>
+            <!-- Add more grid items for the first grid -->
+        </div>
+        <div class="grid-menu grid2">
+            <div class="grid-item"><img src="" class="grid-item img"/>Item A</div>
+            <div class="grid-item"><img src="" class="grid-item img"/>Item B</div>
+            <div class="grid-item"><img src="" class="grid-item img"/>Item C</div>
+            <!-- Add more grid items for the second grid -->
+        </div>
+        <div class="grid-menu grid3">
+            <div class="grid-item"><img src="" class="grid-item img"/>Apple</div>
+            <div class="grid-item"><img src="https://cdn.pixabay.com/photo/2023/03/31/22/21/animal-7891005_1280.jpg" class="grid-item img"/>Banana</div>
+            <div class="grid-item"><img src="" class="grid-item img"/>Orange</div>
+            <!-- Add more grid items for the third grid -->
+        </div>
+        <div class="grid-menu grid4">
+            <div class="grid-item"><img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" class="grid-item img"/><p>A</p></div>
+            <div class="grid-item"><img src="https://www.gstatic.com/webp/gallery/2.sm.jpg" class="grid-item img"/> B</div>
+            <div class="grid-item"><img src="https://www.gstatic.com/webp/gallery3/1_webp_ll.webp" class="grid-item img"/>Item C</div>
+            <!-- Add more grid items for the second grid -->
+        </div>
+    </div>
+<div class="btn-place">
+    <div class="menu-btn">
+        <button class="toggle-button" onclick="toggleGridMenu()">Menu</button>
+    </div>
+</div>
+
+
+
+<h1 class="heading">OUR SERVICES</h1>
+    <div class="card-container">
+        <div class="card" onmouseover="changeCardContent(this)" onmouseout="resetCardContent(this)">
+            <img src="https://www.gstatic.com/webp/gallery/1.sm.webp" alt="Service 1">
+            <h3>webDevelopment</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card" onmouseover="changeCardContent(this)" onmouseout="resetCardContent(this)">
+            <img src="https://www.gstatic.com/webp/gallery/1.sm.webp" alt="Service 2">
+            <h3>VedioEditing</h3>
+            <p class="card-text">Nulla facilisi. Phasellus gravida fermentum neque.</p>
+        </div>
+        <div class="card" onmouseover="changeCardContent(this)" onmouseout="resetCardContent(this)">
+            <img src="https://www.gstatic.com/webp/gallery/1.sm.webp" alt="Service 3">
+            <h3>Advertisement</h3>
+            <p class="card-text">Sed ultrices bibendum purus sit amet congue.</p>
+        </div>
+    </div>
+    <div class="video-holder">
+        <div id="videoContainer" class="video-container"></div>
+    </div>
+
+<div class="video-con">
+    <div class="video">
+        <input type="file" id="videoInput" accept="video/*" class="input ">
+        <button id="uploadButton">Upload Video</button>
+    </div>
+</div>
+    
+
+    <div class="form-bo">
+        <form action="submit" class="form-body">
+            <table>
+                <tr>
+                   <td>
+                    <lable>NAME:</lable>
+                    </td> 
+                   <td>
+                    <input type="text" id="name" value="">
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                     <lable>Addres:</lable> 
+                     </td> 
+                    <td>
+                     <input type="text" id="Addres" value="">
+                    </td>
+                 </tr>
+                <tr>
+                <td>
+                    <label>Ph No:</label></td>
+                <td>
+                    <input type="number" id="number" value=""/>
+                </td>
+                <h1 id="msg"></h1>
+                </tr>
+                <p id="ale"></p>
+            </table>
+                </form>
+                
+                <button onclick="increment()" class="login">Login</button>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-icon"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-facebook-4703920-3915172.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="Index.js"></script>
+</body>
+</html>
