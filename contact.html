@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>CONTACT</title>
+</head>
+<body>
+    <nav>
+        <ul class="list">
+            <li class="list-item" ><a class="item"  href="index.html">Home</a></li>
+            <li class="list-item"><a  class="item" href="contact.html">contact</a></li>
+            <li class="list-item"><a  class="item" href="login.html">LogIn</a></li>
+            <li class="list-item"><a  class="item" href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+        <input type="text" id="sear-txt" value=""/>
+        <button onclick="searched()">search</button>
+        </div>
+        <h2 id="user-name"></h2>
+        <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+    </nav>
+
+      <div class="container">
+        <div class="sidebar">
+          <h2>Sidebar</h2>
+          <ul>
+            <li><a class="linked" href="#">Link 1</a></li>
+            <li><a class="linked" href="#">Link 2</a></li>
+            <li><a class="linked" href="#">Link 3</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+            <li><a class="linked" href="#">Link 4</a></li>
+          </ul>
+        
+        </div>
+        <div class="friend-list">
+          <!-- JavaScript will populate this div with friend items -->
+      </div>
+      </div>
+      <button id="toggleSidebar">Toggle Sidebar</button>
+<div class="persons">
+  <div class="imagelogo">
+    <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+    <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+    <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+  </div>
+</div>
+      <!--  -->
+      
+    <!--  -->
+    
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+    <div class="footer-content">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-facebook-4703920-3915172.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+document.getElementById('toggleSidebar').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
+});
+// 
+const friendData = [
+    { name: "John Doe", avatar: "https://via.placeholder.com/40" },
+    { name: "Jane Smith", avatar: "https://via.placeholder.com/40" },
+    { name: "Bob Johnson", avatar: "https://via.placeholder.com/40" },
+    { name: "Alice Brown", avatar: "https://via.placeholder.com/40" },
+    { name: "David Wilson", avatar: "https://via.placeholder.com/40" },
+    { name: "Eva Garcia", avatar: "https://via.placeholder.com/40" },
+    { name: "Michael Lee", avatar: "https://via.placeholder.com/40" },
+    { name: "Sophia Kim", avatar: "https://via.placeholder.com/40" },
+    { name: "Liam Chen", avatar: "https://via.placeholder.com/40" },
+    { name: "Olivia Li", avatar: "https://via.placeholder.com/40" },
+    { name: "Noah Wang", avatar: "https://via.placeholder.com/40" },
+    { name: "Ava Patel", avatar: "https://via.placeholder.com/40" },
+    { name: "Isabella Kumar", avatar: "https://via.placeholder.com/40" },
+    { name: "Mia Gupta", avatar: "https://via.placeholder.com/40" },
+    { name: "Lucas Nguyen", avatar: "https://via.placeholder.com/40" },
+    { name: "Emma Chen", avatar: "https://via.placeholder.com/40" },
+    { name: "Alexander Singh", avatar: "https://via.placeholder.com/40" },
+    { name: "Sophia Kim", avatar: "https://via.placeholder.com/40" },
+    { name: "William Patel", avatar: "https://via.placeholder.com/40" },
+    { name: "Olivia Li", avatar: "https://via.placeholder.com/40" },
+    { name: "James Johnson", avatar: "https://via.placeholder.com/40" },
+    // Add more friend data as needed
+];
+
+
+        // Function to populate the friend list
+        function populateFriendList() {
+    const friendList = document.querySelector(".friend-list");
+
+    // Loop through friendData and create friend items
+    friendData.forEach((friend) => {
+        const friendItem = document.createElement("div");
+        friendItem.classList.add("friend-item");
+
+        const card = document.createElement("div");
+        card.classList.add("friend-card");
+
+        const avatar = document.createElement("div");
+        avatar.classList.add("friend-avatar");
+        avatar.innerHTML = `<img src="${friend.avatar}" alt="${friend.name}">`;
+
+        const name = document.createElement("div");
+        name.classList.add("friend-name");
+        name.textContent = friend.name;
+
+        card.appendChild(avatar);
+        friendItem.appendChild(card);
+        friendItem.appendChild(name);
+
+        friendList.appendChild(friendItem);
+    });
+}
+
+// Call the function to populate the friend list
+populateFriendList();
+
+
+
+</script>
+</body>
+</html>

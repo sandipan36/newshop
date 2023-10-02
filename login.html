@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>LOG IN</title>
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Hello World!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
+<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
+<meta name="twitter:card" content="summary" />
+</head>
+<body>
+    <nav>
+        <ul class="list">
+            <li class="list-item" ><a class="item"  href="index.html">Home</a></li>
+            <li class="list-item"><a  class="item" href="contact.html">contact</a></li>
+            <li class="list-item"><a  class="item" href="login.html">LogIn</a></li>
+            <li class="list-item"><a  class="item" href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+        <input type="text" id="sear-txt" value=""/>
+        <button onclick="searched()">search</button>
+        </div>
+        <h2 id="user-name"></h2>
+        <img src="https://th.bing.com/th/id/OIP.C4yEUq2tPmLDROuTo9XkcQHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="hii" class="logo"/>
+    </nav>
+    <div class="log">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-status"></div>
+    </div>
+    </div>
+    <!--  -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-icon"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-facebook-4703920-3915172.png" alt="Facebook"></a>
+                <a href="https://twitter.com/" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
